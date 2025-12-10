@@ -1,43 +1,24 @@
 body {
-  background-color: rgb(255, 159, 159);
+  background-color: #ffebd8);
 }
 
 h1 {
+
   font-family: 'Arial Black', sans-serif;
   font-size: 40px;
-  background-color: rgb(220, 255, 163);
-  text-align: center;
-}
-
-h1 a:visited {
-  color: rgb(20, 0, 90);
   background-color: transparent;
-  text-decoration: none;
+  text-align: left;
+  margin-bottom: 0%;
 }
-h1 a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+.logo-img {
+  width: 150px;
+  height: auto;
+  /* keeps proportions */
 }
-h1 a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+#bodymain {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff5da;
+  box-shadow: 0 0 10px rgba(255, 223, 154, 0.1);
 }
-  
-p a {
-  text-decoration: none;
-  color: red;
-  font-size: 20px;
-}
-.city {
-  background-color: rgb(234, 255, 184);
-  color: rgb(51, 51, 51);
-  padding:20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
+S
