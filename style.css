@@ -1,5 +1,5 @@
 body {
-  background-color: #ffebd8);
+  background-color: #ffebd8;
 }
 
 h1 {
@@ -21,4 +21,52 @@ h1 {
   background-color: #fff5da;
   box-shadow: 0 0 10px rgba(255, 223, 154, 0.1);
 }
-S
+
+
+
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 900px; /* adjust how big you want the carousel */
+  aspect-ratio: 3 / 2; /* 6000x4000 = 3:2 ratio */
+  overflow: hidden;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 10px;
+  background: #000;
+}
+
+.carousel-slide {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* IMPORTANT: shows entire 6000x4000 image */
+  background-color: black; /* fills empty space */
+}
+
+/* Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  font-size: 30px;
+  padding: 8px 13px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
