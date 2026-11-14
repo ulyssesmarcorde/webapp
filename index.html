@@ -1,37 +1,108 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EVOTek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="description" content="Discover the Marquis — a welcoming setting for celebrations, meetings, and moments worth sharing.">
+  <title>Marquis | A place to gather</title>
+  <link rel="icon" type="image/x-icon" href="image/favicon.ico">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="/image/favicon.ico">
+  <script src="script.js" defer></script>
 </head>
 
-<body id="bodymain">
-  <nav>
-    <div id="header"></div>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Marquis home">
+      <img src="image/logo.png" alt="Marquis">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+      <a href="#spaces">Our spaces</a>
+      <a href="#about">The experience</a>
+      <a class="nav-cta" href="#spaces">Find your setting <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
-  </nav>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="image/cover.jpg" alt="" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">A PLACE TO COME TOGETHER</p>
+        <h1 id="hero-title">Make room for<br>something memorable.</h1>
+        <p class="hero-copy">A thoughtful setting for the moments that matter — from ideas shared around a table to celebrations that bring everyone together.</p>
+        <a class="button button-light" href="#spaces">Explore our spaces <span aria-hidden="true">↓</span></a>
+      </div>
+      <span class="hero-caption">A setting that feels like yours</span>
+    </section>
 
+    <section class="intro section-wrap" id="about" aria-labelledby="intro-title">
+      <p class="eyebrow eyebrow-dark">THE MARQUIS EXPERIENCE</p>
+      <h2 id="intro-title">Room to gather.<br><span>Space to make it yours.</span></h2>
+      <p class="intro-copy">Every occasion has its own character. Find a space that feels right, bring your people together, and make the day your own.</p>
+      <span class="intro-mark" aria-hidden="true">M</span>
+    </section>
+
+    <section class="spaces-section" id="spaces" aria-labelledby="spaces-title">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark">A SPACE FOR EVERY STORY</p>
+            <h2 id="spaces-title">Find your setting.</h2>
+          </div>
+          <p>From a focused conversation to a room full of celebration, explore a few ways to make the space your own.</p>
+        </div>
+        <div class="space-grid">
+          <article class="space-card space-card-featured">
+            <img src="image/space-celebrations.jpg" alt="An elegant banquet room set for a celebration" loading="lazy">
+            <div class="space-card-overlay"></div>
+            <div class="space-card-content">
+              <span class="space-number">01 / GATHER</span>
+              <h3>Celebrations</h3>
+              <p>Bring everyone together for a moment worth remembering.</p>
+            </div>
+          </article>
+          <article class="space-card">
+            <img src="image/space-meetings.jpg" alt="A welcoming meeting room arranged for a group" loading="lazy">
+            <div class="space-card-overlay"></div>
+            <div class="space-card-content">
+              <span class="space-number">02 / CONNECT</span>
+              <h3>Meetings</h3>
+              <p>A considered space for good ideas and conversation.</p>
+            </div>
+          </article>
+          <article class="space-card">
+            <img src="image/space-conferences.jpg" alt="A refined boardroom prepared for a meeting" loading="lazy">
+            <div class="space-card-overlay"></div>
+            <div class="space-card-content">
+              <span class="space-number">03 / CREATE</span>
+              <h3>Conferences</h3>
+              <p>Set the scene for a day of sharing and discovery.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-wrap" aria-labelledby="closing-title">
+      <p class="eyebrow eyebrow-dark">YOUR MOMENT STARTS HERE</p>
+      <h2 id="closing-title">Bring your people.<br><span>We’ll make room.</span></h2>
+      <a class="button button-dark" href="#spaces">Explore the spaces <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#home">MARQUIS</a>
+    <p>A place to gather, connect, and celebrate.</p>
+    <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    <span class="copyright">© <span id="current-year">2026</span> Marquis</span>
+  </footer>
 </body>
 
-<div class="carousel-container">
-  <div class="carousel-slide">
-    <img src="image/car1.jpg" alt="">
-    <img src="image/car2.jpg" alt="">
-    <img src="image/car3.jpg" alt="">
-  </div>
-
-  <!-- Buttons -->
-  <button class="prev">&#10094;</button>
-  <button class="next">&#10095;</button>
-</div>
-
-<script src="script.js"></script>
-
-<div>
-  <div id="footer"></div>
-</div>
 </html>
